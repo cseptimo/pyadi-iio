@@ -3,7 +3,7 @@
 ![PyADI-IIO Logo](images/PyADI-IIO_Logo_72.png)
 
 [![Build Status](https://travis-ci.org/analogdevicesinc/pyadi-iio.svg?branch=master)](https://travis-ci.org/analogdevicesinc/pyadi-iio)
-[![PyPI version](https://badge.fury.io/py/pyadi-iio.svg)](https://badge.fury.io/py/pyadi-iio) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4bd027bfc5774029a30a9e1cedf5a434)](https://www.codacy.com/app/travis.collins/pyadi-iio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=analogdevicesinc/pyadi-iio&amp;utm_campaign=Badge_Grade) [![](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/download/releases/3.7.0/)
+[![PyPI version](https://badge.fury.io/py/pyadi-iio.svg)](https://badge.fury.io/py/pyadi-iio) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4bd027bfc5774029a30a9e1cedf5a434)](https://www.codacy.com/app/travis.collins/pyadi-iio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=analogdevicesinc/pyadi-iio&amp;utm_campaign=Badge_Grade) [![](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/download/releases/3.8.0/)
 
 [[Docs](http://analogdevicesinc.github.io/pyadi-iio/)]
 [[Support](http://ez.analog.com)]
@@ -12,6 +12,7 @@
 ### Currently supported hardware
 - AD2S1210
 - AD3552r (AD3542r)
+- AD3552r-hs (AD3551r, AD3541r, AD3542r)
 - AD4000 (AD4004, AD4008)
 - AD4001 (AD4005)
 - AD4002 (AD4006, AD4010)
@@ -22,11 +23,13 @@
 - AD4110
 - AD4111
 - AD4112
+- AD4113
 - AD4114
 - AD4115
 - AD4116
 - AD4134
 - AD4170
+- AD4190
 - AD4630
 - AD4696
 - AD4697
@@ -160,6 +163,8 @@
 - ADXL314
 - ADXL345
 - ADXL355
+- ADXL380
+- ADXL382
 - ADXL1002
 - ADXRS290
 - CN0511

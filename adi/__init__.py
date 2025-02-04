@@ -1,4 +1,4 @@
-# Copyright (C) 2019-2024 Analog Devices, Inc.
+# Copyright (C) 2019-2025 Analog Devices, Inc.
 #
 # SPDX short identifier: ADIBSD
 
@@ -13,6 +13,7 @@ from adi.ad777x import ad777x
 from adi.ad936x import Pluto, ad9361, ad9363, ad9364
 from adi.ad937x import ad9371, ad9375
 from adi.ad3552r import ad3552r
+from adi.ad3552r_hs import ad3552r_hs
 from adi.ad4020 import ad4000, ad4001, ad4002, ad4003, ad4020
 from adi.ad4110 import ad4110
 from adi.ad4130 import ad4130
@@ -90,6 +91,7 @@ from adi.adt7420 import adt7420
 from adi.adxl313 import adxl313
 from adi.adxl345 import adxl345
 from adi.adxl355 import adxl355
+from adi.adxl380 import adxl380
 from adi.adxrs290 import adxrs290
 from adi.cn0511 import cn0511
 from adi.cn0532 import cn0532

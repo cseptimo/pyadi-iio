@@ -3,10 +3,10 @@ import time
 from test.globals import *
 
 import iio
-
-import adi
 import numpy as np
 import pytest
+
+import adi
 
 
 def pytest_configure(config):
@@ -24,6 +24,9 @@ def pytest_configure(config):
     # Add custom marks to ini for OBS channels
     config.addinivalue_line(
         "markers", "obs_required: mark tests that require observation data paths"
+    )
+    config.addinivalue_line(
+        "markers", "no_obs_required: mark tests that require observation data paths"
     )
     config.addinivalue_line("markers", "lvds_test: mark tests for LVDS")
     config.addinivalue_line("markers", "cmos_test: mark tests for CMOS")
@@ -73,6 +76,8 @@ def pytest_runtest_setup(item):
         pytest.skip(
             "Testing requiring observation disabled. Use --obs-enable flag to enable"
         )
+    if obs and "no_obs_required" in marks:
+        pytest.skip("Testing requiring observation enabled. Skipping this test")
 
     # Handle CMOS and LVDS tests
     cmos = item.config.getoption("--cmos")

@@ -1,4 +1,4 @@
-# Copyright (C) 2024 Analog Devices, Inc.
+# Copyright (C) 2024-2025 Analog Devices, Inc.
 #
 # SPDX short identifier: ADIBSD
 
@@ -6,6 +6,7 @@
 from decimal import Decimal
 
 import numpy as np
+
 from adi.attribute import attribute
 from adi.context_manager import context_manager
 from adi.rx_tx import rx
@@ -22,7 +23,7 @@ class ad4170(rx, context_manager):
 
         context_manager.__init__(self, uri, self._device_name)
 
-        compatible_parts = ["ad4170"]
+        compatible_parts = ["ad4170", "ad4190"]
 
         self._ctrl = None
 
