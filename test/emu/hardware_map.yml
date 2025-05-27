@@ -156,6 +156,14 @@ ad9172:
       - filename: ad9172.xml
       - data_devices:
           - iio:device2
+adf5611:
+  - adf5611
+  - pyadi_iio_class_support:
+      - adf5611
+#   - emulate:
+#       - filename: ad9172.xml
+#       - data_devices:
+#           - iio:device2
 cn0511:
   - ad9166-amp
   - adf4372
@@ -395,6 +403,14 @@ adxl355:
       - filename: adxl355.xml
       - data_devices:
           - iio:device0
+ad3530r:
+  - ad3530r
+  - pyadi_iio_class_support:
+      - ad353xr
+  - emulate:
+      - filename: ad353xr.xml
+      - data_devices:
+          - iio:device0
 ad3552r:
   - ad3552r
   - pyadi_iio_class_support:
@@ -485,6 +501,26 @@ adaq4224:
       - filename: adaq4224.xml
       - data_devices:
           - iio:device0
+
+# Frequency Synthesizers
+adf5611:
+  - adf5611
+  - pyadi_iio_class_support:
+      - adf5611
+  - emulate:
+      - filename: adf5611.xml
+      - data_devices:
+          - iio:device0
+adf4377:
+  - adf4377
+  - pyadi_iio_class_support:
+      - adf4377
+  - emulate:
+      - filename: adf4377.xml
+      - data_devices:
+          - iio:device0
+
+
 ltc2387:
   - ltc2387
   - pyadi_iio_class_support:
@@ -527,6 +563,15 @@ ad6676:
       - filename: ad6676.xml
       - data_devices:
           - iio:device1
+
+ad7091r8:
+  - ad7091r8
+  - pyadi_iio_class_support:
+      - ad7091rx
+  - emulate:
+      - filename: ad7091rx.xml
+      - data_devices:
+          - iio:device0
 
 ad7768:
   - ad7768

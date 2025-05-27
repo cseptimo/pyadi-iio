@@ -3,6 +3,7 @@
 # SPDX short identifier: ADIBSD
 
 from adi.ad2s1210 import ad2s1210
+from adi.ad353xr import ad353xr
 from adi.ad405x import ad405x
 from adi.ad469x import ad469x
 from adi.ad579x import ad579x
@@ -25,6 +26,7 @@ from adi.ad5686 import ad5686
 from adi.ad5754r import ad5754r
 from adi.ad5940 import ad5940
 from adi.ad6676 import ad6676
+from adi.ad7091rx import ad7091rx
 from adi.ad7124 import ad7124
 from adi.ad7134 import ad7134
 from adi.ad7291 import ad7291
@@ -58,7 +60,10 @@ from adi.adar1000 import adar1000, adar1000_array
 from adi.adf4159 import adf4159
 from adi.adf4355 import adf4355
 from adi.adf4371 import adf4371
+from adi.adf4377 import adf4377
+from adi.adf4382 import adf4382
 from adi.adf5610 import adf5610
+from adi.adf5611 import adf5611
 from adi.adg2128 import adg2128
 from adi.adis16460 import adis16460
 from adi.adis16475 import adis16475
